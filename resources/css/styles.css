@@ -93,6 +93,27 @@ nav ul{
   text-align: center;
 }
 
+.store_info{
+  display: flex;
+  padding: 4rem;
+  background-color: white;
+}
+.store_info .container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.info_item{
+  width: 35%;
+  color: black;
+}
+
+.info_item h6{
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+}
+
 /* By ID Styling */
 #main_description{
   position: relative;
@@ -114,13 +135,45 @@ nav ul{
   font-weight: bold;
 }
 
-.store_info{
-  display: flex;
+#mobile_nav{
+  display: none;
 }
 
+/*Media Queries for Body*/
+@media only screen and (max-width: 1024px){
+  #mobile_nav{
+    display: flex;
+    justify-content: center;
+  }
+
+  #thermal_glasses{
+    display: none;
+  }
+
+  nav ul{
+    display: none;
+  }
+
+  .item{
+    width: 47%;
+  }
+}
+
+@@media only screen and(max-width: 470px){
+
+}
 /* Footer Styling */
 /* By Tag Styling */
+footer{
+  height: 5rem;
+}
 
+footer span{
+  display: flex;
+  height: 100%;
+  text-align: left;
+  align-items: center;
+}
 /* By Class Styling */
 
 /* By ID Styling */
