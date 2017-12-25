@@ -159,8 +159,44 @@ nav ul{
   }
 }
 
-@@media only screen and(max-width: 470px){
+@media only screen and (max-width: 470px){
+  .main_banner{
+    height: 15rem;
+    align-items: flex-end;
+  }
 
+  #main_description{
+    height: 5rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+  }
+
+  #main_description p{
+    font-size: 0.77rem;
+  }
+
+  #main_description h2{
+    font-size: 1rem;
+  }
+
+  #watch{
+    display: none;
+  }
+
+  .item{
+    width: 90%;
+  }
+
+  .store_info .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info_item{
+    width: 90%;
+    margin: .5rem;
+  }
 }
 /* Footer Styling */
 /* By Tag Styling */
@@ -177,3 +213,10 @@ footer span{
 /* By Class Styling */
 
 /* By ID Styling */
+
+/*Footer Media Queries*/
+@media only screen and (max-width: 470px){
+  footer span{
+    text-align: center;
+  }
+}
